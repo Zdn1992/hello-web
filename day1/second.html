@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>复习html标签2</title>
 </head>
 <body>
+    <form action="http://localhost/getUserInfo.do">
+    <label for="area">个人简介</label>
+    <textarea name="area" id="area" cols="30" rows="10">
+        请输入介绍
+    </textarea>
+    <input type="radio" name="gender" value="1">男
+    <input type="radio" name="gender" value="2">女
+    <br>
+    <input type="checkbox" name="interst" value="1">跑步
+    <input type="checkbox" name="interst" value="2">游泳
+    <input type="checkbox" name="interst" value="3" checked="checked">游戏
+    <br>
+    <label for="select">学科</label>
+    <select id="select">
+        <option value="数学">数学</option>
+        <option value="音乐">音乐</option>
+        <option value="英语">英语</option>
+    </select>
+    </form>
+
     
 </body>
 </html>

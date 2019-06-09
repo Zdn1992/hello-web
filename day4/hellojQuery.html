@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>第一个简单的jQuery程序</title>
+    <style type="text/css">
+        div {
+            padding: 8px 0px;
+            font-size: 12px;
+            text-align: center;
+            border: solid 1px #888;
+        }
+    </style>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('div').html('hello jQuery!');
+            var $div = $('div');
+            var divDom = $div[1];
+            divDom.style.color = 'pink';
+        })
+    </script>
+    <!-- 使用js原生的写法 -->
+    <script>
+        window.onload = function () {
+            var pDom = document.getElementById('js');
+            pDom.innerHTML = "js的原生写法";
+            pDom.style.color = 'red';
+        }
+    </script>
+    <!-- jquery的写法 -->
+    <script>
+        $(document).ready(function () {
+            $('#jquery').html('jquery').css('color', 'black');
+            var $div = $('div');
+            var divDom = $div.get(2);
+            divDom.style.color = 'orange';
+        })
+
+    </script>
+
+</head>
+
+<body>
+    <div></div>
+    <p id='js'></p>
+    <p id='jquery'></p>
+
+    <!-- jquery和js原生的dom对象之间的转换 -->
+    <div>元素一</div>
+    <div>元素二</div>
+    <div>元素三</div>
+</body>
+
+</html>

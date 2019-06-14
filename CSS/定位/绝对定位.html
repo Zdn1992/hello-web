@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 300px;
+            width: 300px;
+            background: pink;
+            position: relative;
+            left: 200px;
+            top: 200px;
+        }
+
+        .in {
+            height: 100px;
+            width: 100px;
+            background: green;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="in"></div>
+    </div>
+</body>
+
+</html>

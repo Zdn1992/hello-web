@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>混合布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 100px;
+            background: blue;
+        }
+        .head {
+            height: 100px;
+            width: 900px;
+            margin: 0 auto;
+            background: pink;
+        }
+        .main {
+            height: 750px;
+            width: 900px;
+            background: black;
+            margin: 0 auto;
+        }
+
+        .left {
+            height: 750px;
+            width: 300px;
+            background: yellow;
+            float: left;
+        }
+
+        .right {
+            height: 750px;
+            width: 600px;
+            background: rgb(0, 225, 255);
+            float: right;
+        }
+
+        .sub_l {
+            height: 750px;
+            width: 200px;
+            background: rgb(24, 243, 243);
+            float: left;
+        }
+        .sub_r {
+            height: 750px;
+            width: 400px;
+            background: rgb(25, 26, 26);
+            float: right;
+        }
+        .foot {
+            margin: 0 auto;
+            height: 100px;
+            width: 900px;
+            background: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="head"></div>
+    </div>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+            <div class="sub_l"></div>
+            <div class="sub_r"></div>
+        </div>
+    </div>
+    <div class="foot"></div>
+</body>
+
+</html>

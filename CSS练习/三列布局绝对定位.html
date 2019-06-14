@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三列布局绝对定位</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .left {
+            background: pink;
+            height: 333px;
+            width: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .middle {
+            background: red;
+            height: 333px;
+            margin: 0 210px 0 210px;
+           
+        }
+        .right {
+            background: green;
+            height: 333px;
+            width: 200px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="middle">
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

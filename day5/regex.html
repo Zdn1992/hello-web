@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表达式</title>
+</head>
+
+<body>
+    <div>
+        <div id="top">
+            <h1>文章提纲：</h1>
+            <ul>
+                <li>元字符</li>
+                <li>重复限定符</li>
+                <li>分组</li>
+                <li>转义</li>
+                <li>条件或</li>
+                <li>区间</li>
+            </ul>
+        </div>
+        <div id="content">
+            <p>万物皆有源，正则也是如此，元字符是构造正则表达式的一种基本元素。
+                我们先来记几个常用的元字符：</p>
+                <img src="./img/元字符.jpg" alt="元字符">
+                <p>匹配有abc开头的字符串：\babc或者^abc</p>
+        </div>
+    </div>
+</body>
+<script>
+    // 0或者1
+    var pattern = /^(0|1)$/,
+	str = '00';
+console.log(pattern.test(str));
+</script>
+</html>

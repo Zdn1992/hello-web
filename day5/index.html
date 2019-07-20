@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>各种事件的练习</title>
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+    <p>段落</p>
+    <div>
+        <button id="single">按钮,回调显示this</button>
+        <button id="double">双击按钮</button>
+        <p id="mousedown">鼠标按下</p>
+        <p id="mouseup">鼠标放开</p>
+        <p>鼠标飘过</p>
+    </div>
+
+</body>
+<script>
+    var param = 'ok';
+    $(document).ready(function () {
+        $('button:eq(0)').click(param,function (e) {
+            alert(e.data);
+        })
+
+        $('button:eq(1)').dblclick(function(){
+            alert("double kill")
+        });
+        $('p:eq(1)').mousedown(function(e){
+            alert(e.which);
+        })
+        $('p:eq(2)').mouseup(function(e){
+            alert(e.which);
+        })
+        $('p:last').mousemove(function(e){
+            alert('哈哈');
+        })
+    })
+</script>
+
+</html>
